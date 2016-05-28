@@ -4,4 +4,6 @@ This program is for the generation and the investigation of the Extended Phase G
 
 Given the parameters such as flip angle, initial phase and time-position of the RF pulses, the complex magnetization is calculated for each of the dephasing, rephasing and stored pathways. Each pathway is then drawn on the phase diagram.
 
+The program also allows to specify the relative crusher gradient strength for each of the refocusing RF pulse. By this way, the contribution of each echo to the final signal can be tailored.
+
 Omer Faruk Oran, May 2016
