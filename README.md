@@ -6,8 +6,7 @@ Given the parameters such as flip angle, initial phase and time-position of the 
 
 The program also allows to specify the relative crusher gradient strength for each of the refocusing RF pulse. By this way, the contribution of each echo to the final signal can be tailored.
 
-Here is a snapshot of the figure obtained using the program
-
-![Snapshot](/snapshot.jpg)
-
 Omer Faruk Oran, May 2016
+
+Here is a snapshot of the figure obtained using the program.
+![Snapshot](/Snapshot.jpg)
