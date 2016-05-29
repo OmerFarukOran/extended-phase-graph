@@ -9,4 +9,5 @@ The program also allows to specify the relative crusher gradient strength for ea
 Omer Faruk Oran, May 2016
 
 Here is a snapshot of the figure obtained using the program.
+
 ![Snapshot](/Snapshot.jpg)
