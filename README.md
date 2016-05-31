@@ -10,4 +10,4 @@ Omer Faruk Oran, May 2016
 
 Here is a snapshot of the figure obtained using the program.
 
-![Snapshot](/Snapshot.jpg)
+![Snapshot](/Snapshot.png)
