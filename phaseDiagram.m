@@ -14,7 +14,7 @@ function phaseDiagram()
 
 %% Parameters
 % Number of RF pulses including exc RF pulse
-RFnum=6;
+RFnum=5;
 
 % Flip angle for the excitation RF pulse
 flipAngleExc=pi/2;
@@ -44,7 +44,7 @@ m0=0.5;
 % Regular (equal) turbo-spin-echo crushers
 crusher=ones(1,(RFnum-1)*2)*2;
 
-% Crushers for getting approximately only primary echo**. RFnum should be odd.
+% Crushers for getting approximately only primary echo**. 
 % The design of crusher gradients is not complete!
 % ** Poon, C. S., & Henkelman, R. M. (1992). "Practical T2 quantitation
 % for clinical applications". JMRI, 2(5), 541–553.
@@ -55,7 +55,6 @@ crusher=ones(1,(RFnum-1)*2)*2;
 % crusher(3:4:end)=-(1:(RFnum-1)/2);
 % crusher(4:4:end)=-(1:(RFnum-1)/2);
 % crusher=fliplr(crusher);
-
 
 % Width of the crusher regions
 ds=0.1;
@@ -188,7 +187,8 @@ end
 % Default Line Width
 lw=2;
 
-hFigure=figure('Position', [300, 300, 1000, 650],'Name', 'Phase Diagram');
+hFigure=figure('Position', [300, 300, 1000, 650],'Name', 'Phase Diagram',...
+    'NumberTitle','off');
 movegui(hFigure,'center');
 
 % Colormap
@@ -298,16 +298,16 @@ end
             find(pathLine(3,:)==lineIndex)];
         
         % Unhighlight the previous selection
-        hline=findobj(gca,'Type','line','-and','LineWidth',lw+1);
+        hline=findobj(gca,'Type','line','-and','LineWidth',lw+2);
         set(hline,'LineWidth',lw);
         
         % Highlight the current selection
         hl1=findobj(gca,'Type','line','-and','UserData',pathLine(1,pathIndex));
         hl2=findobj(gca,'Type','line','-and','UserData',pathLine(2,pathIndex));
         hl3=findobj(gca,'Type','line','-and','UserData',pathLine(3,pathIndex));
-        set(hl1,'LineWidth',lw+1);
-        set(hl2,'LineWidth',lw+1);
-        set(hl3,'LineWidth',lw+1);
+        set(hl1,'LineWidth',lw+2);
+        set(hl2,'LineWidth',lw+2);
+        set(hl3,'LineWidth',lw+2);
         
         % Specify the common lines (pathways) so that they are selected all
         % together in the list. echoIndex gives the indices of the pathways
